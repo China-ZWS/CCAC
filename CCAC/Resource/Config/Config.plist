@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MainMore</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>CCACMainMore.personalText</string>
+			<key>image</key>
+			<string>main_more_personal_icon</string>
+			<key>linkUrl</key>
+			<string>index.html#user</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CCACMainMore.shopText</string>
+			<key>image</key>
+			<string>main_more_shop_icon</string>
+			<key>linkUrl</key>
+			<string>index.html#car</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CCACMainMore.dfhText</string>
+			<key>image</key>
+			<string>main_more_dfh_icon</string>
+			<key>linkUrl</key>
+			<string>index.html#/orderList?status=1</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CCACMainMore.dshText</string>
+			<key>image</key>
+			<string>main_more_dsh_icon</string>
+			<key>linkUrl</key>
+			<string>index.html#/orderList?status=2</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CCACMainMore.addressText</string>
+			<key>image</key>
+			<string>main_more_address_icon</string>
+			<key>linkUrl</key>
+			<string>/index.html#location</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CCACMainMore.languageText</string>
+			<key>image</key>
+			<string>main_more_language_icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CCACMainMore.kefuText</string>
+			<key>image</key>
+			<string>main_more_kefu_icon</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>CCACMainMore.signOutText</string>
+			<key>image</key>
+			<string>main_more_clear_icon</string>
+		</dict>
+	</array>
+</dict>
+</plist>

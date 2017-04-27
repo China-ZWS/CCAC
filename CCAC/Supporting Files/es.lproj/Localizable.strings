@@ -1,0 +1,60 @@
+/* 
+  Localizable.strings
+  CCAC
+
+  Created by 周文松 on 2017/3/29.
+  Copyright © 2017年 周文松. All rights reserved.
+*/
+
+
+/*
+ * 公共
+ */
+"progress.logging" = "acceder...";
+"loginSuccess.title" = "inicio de sesión correcto";
+"userInfo.name" = "mella";
+
+/*
+ * 登录
+ * Class:CCACSignInVC
+ */
+"CCACSignInVC.wechatLoginBtnTitle" = "Wechat iniciar la sesión";
+"CCACSignInVC.visitorLoginBtnTitle" = "Login de visitante";
+
+/*
+ * 首页
+ * Class:CCACMainVC
+ */
+"CCACMainMore.personalText" = "Información Personal";
+"CCACMainMore.shopText" = "Carro de Compras";
+"CCACMainMore.dfhText" = "Por Despachar";
+"CCACMainMore.dshText" = "Por Recibir";
+"CCACMainMore.addressText" = "Gestión de Direcciones";
+"CCACMainMore.languageText" = "Lenguaje";
+"CCACMainMore.kefuText" = "Servicio al Cliente";
+"CCACMainMore.signOutText" = "Dejar";
+
+"CCACMainContent.top_leftText" = "Certificación NFC";
+"CCACMainContent.top_rightText" = "Centro de Compras";
+"CCACMainContent.bottom_leftText" = "Acerca CCAC";
+"CCACMainContent.bottom_rightText" = "Cultura Argentina";
+
+/*
+ * 切换语言
+ * Class:CCACLanguageVC
+ */
+"CCACLanguageVC.title" = "Idioma";
+"CCACLanguageVC.row1" = "Chino";
+"CCACLanguageVC.row2" = "Inglés";
+"CCACLanguageVC.row3" = "Español";
+
+/*
+ * 扫码验证
+ * Class:CCACTestVC
+ */
+"CCACTestVC.title" = "Certificación de Seguridad";
+"CCACTestVC.testText" = "Código de Verificación";
+"CCACTestVC.back_title_top" = "Mantenga el dispositivo cerca de la etiqueta";
+"CCACTestVC.back_title_bottom" = "please keep the phone close to the label";
+
+

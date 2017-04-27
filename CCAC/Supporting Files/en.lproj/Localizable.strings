@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  CCAC
+
+  Created by 周文松 on 2017/3/29.
+  Copyright © 2017年 周文松. All rights reserved.
+*/
+
+
+/*
+ * 公共
+ */
+"progress.logging" = "logging...";
+"loginSuccess.title" = "login successful";
+"userInfo.name" = "user name";
+/*
+ * 登录
+ * Class:CCACSignInVC
+ */
+"CCACSignInVC.wechatLoginBtnTitle" = "Wechat Login";
+"CCACSignInVC.visitorLoginBtnTitle" = "Visitor login";
+
+/*
+ * 首页
+ * Class:CCACMainVC
+ */
+"CCACMainMore.personalText" = "Personal Information";
+"CCACMainMore.shopText" = "Shopping Cart";
+"CCACMainMore.dfhText" = "To be Delivered";
+"CCACMainMore.dshText" = "To be Received";
+"CCACMainMore.addressText" = "Address Management";
+"CCACMainMore.languageText" = "Language";
+"CCACMainMore.kefuText"="Customer Service";
+"CCACMainMore.signOutText" = "Sign Out";
+
+"CCACMainContent.top_leftText" = "NFC Certification";
+"CCACMainContent.top_rightText" = "Shopping Center";
+"CCACMainContent.bottom_leftText" = "Argentina Culture";
+"CCACMainContent.bottom_rightText" = "About CACC";
+
+/*
+ * 切换语言
+ * Class:CCACLanguageVC
+ */
+"CCACLanguageVC.title" = "Language";
+"CCACLanguageVC.row1" = "Chinese";
+"CCACLanguageVC.row2" = "English";
+"CCACLanguageVC.row3" = "Spanish";
+
+/*
+ * 扫码验证
+ * Class:CCACTestVC
+ */
+"CCACTestVC.title" = "Security Certification";
+"CCACTestVC.testText" = "Verification Code";
+"CCACTestVC.back_title_top" = "Keep the Phone Close to the Label";
+"CCACTestVC.back_title_bottom" = "please keep the phone close to the label";

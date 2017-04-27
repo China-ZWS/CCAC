@@ -1,0 +1,57 @@
+/* 
+  Localizable.strings
+  CCAC
+
+  Created by 周文松 on 2017/3/29.
+  Copyright © 2017年 周文松. All rights reserved.
+*/
+
+/*
+ * 公共
+ */
+"progress.logging" = "登录中...";
+"loginSuccess.title" = "登录成功";
+"userInfo.name" = "用户名";
+
+/*
+ * 登录
+ * Class:CCACSignInVC
+ */
+"CCACSignInVC.wechatLoginBtnTitle" = "微信登录";
+"CCACSignInVC.visitorLoginBtnTitle" = "游客登录";
+
+/*
+ * 首页
+ * Class:CCACMainVC
+ */
+"CCACMainMore.personalText" = "个人资料";
+"CCACMainMore.shopText" = "购物车";
+"CCACMainMore.dfhText" = "待发货";
+"CCACMainMore.dshText" = "待收货";
+"CCACMainMore.addressText" = "地址管理";
+"CCACMainMore.languageText" = "语言切换";
+"CCACMainMore.kefuText" = "联系客服";
+"CCACMainMore.signOutText" = "退出登录";
+
+"CCACMainContent.top_leftText" = "NFC认证";
+"CCACMainContent.top_rightText" = "商城";
+"CCACMainContent.bottom_leftText" = "阿根廷文化";
+"CCACMainContent.bottom_rightText" = "关于商会";
+
+/*
+ * 切换语言
+ * Class:CCACLanguageVC
+ */
+"CCACLanguageVC.title" = "语言";
+"CCACLanguageVC.row1" = "中文";
+"CCACLanguageVC.row2" = "英文";
+"CCACLanguageVC.row3" = "西班牙文";
+
+/*
+ * 扫码验证
+ * Class:CCACTestVC
+ */
+"CCACTestVC.title" = "防伪验证";
+"CCACTestVC.testText" = "扫码验证";
+"CCACTestVC.back_title_top" = "请将防伪标签贴近手机";
+"CCACTestVC.back_title_bottom" = "please keep the phone close to the label";
