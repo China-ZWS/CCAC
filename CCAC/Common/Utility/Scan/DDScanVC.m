@@ -171,10 +171,10 @@
     [_previewLayer addSublayer:self.drawLayer];
 
 
-    CGFloat ScreenHigh = CGRectGetHeight(_previewLayer.frame);
-    CGFloat ScreenWidth = CGRectGetWidth(_previewLayer.frame);
-
-    _output.rectOfInterest = CGRectMake(((self.view.dd_height - [DDScanLayer lineWidth]) / 2 - [DDScanLayer titleHeight]) / ScreenHigh,(self.view.dd_width - [DDScanLayer lineWidth]) / 2 / ScreenWidth , [DDScanLayer lineWidth] / ScreenHigh, [DDScanLayer lineWidth] / ScreenWidth);
+//    CGFloat ScreenHigh = CGRectGetHeight(_previewLayer.frame);
+//    CGFloat ScreenWidth = CGRectGetWidth(_previewLayer.frame);
+//
+//    _output.rectOfInterest = CGRectMake(((self.view.dd_height - [DDScanLayer lineWidth]) / 2 - [DDScanLayer titleHeight]) / ScreenHigh,(self.view.dd_width - [DDScanLayer lineWidth]) / 2 / ScreenWidth , [DDScanLayer lineWidth] / ScreenHigh, [DDScanLayer lineWidth] / ScreenWidth);
 
     //开始捕获
     [_session startRunning];

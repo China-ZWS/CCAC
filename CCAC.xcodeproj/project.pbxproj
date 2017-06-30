@@ -24,6 +24,8 @@
 		E414EA311E949665007CC2B0 /* CCACWechatPayService.m in Sources */ = {isa = PBXBuildFile; fileRef = E414EA301E949665007CC2B0 /* CCACWechatPayService.m */; };
 		E414EA351E9497E4007CC2B0 /* CCACWechatPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E414EA341E9497E4007CC2B0 /* CCACWechatPayModel.m */; };
 		E41E81031E96570E004FF0AA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E487E2111E88F97800E3B4BD /* Info.plist */; };
+		E47165071ED88F2000B7C960 /* CCACProductVerifyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = E47165061ED88F2000B7C960 /* CCACProductVerifyTask.m */; };
+		E471650A1ED88F8D00B7C960 /* CCACProductVerifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E47165091ED88F8D00B7C960 /* CCACProductVerifyModel.m */; };
 		E487E20D1E88F86700E3B4BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E487E20C1E88F86700E3B4BD /* AppDelegate.m */; };
 		E487E2141E88F97800E3B4BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E487E2121E88F97800E3B4BD /* main.m */; };
 		E487E2171E88FA6A00E3B4BD /* libDDKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E487E2161E88FA6A00E3B4BD /* libDDKit.a */; };
@@ -95,6 +97,10 @@
 		E414EA301E949665007CC2B0 /* CCACWechatPayService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCACWechatPayService.m; sourceTree = "<group>"; };
 		E414EA331E9497E4007CC2B0 /* CCACWechatPayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCACWechatPayModel.h; sourceTree = "<group>"; };
 		E414EA341E9497E4007CC2B0 /* CCACWechatPayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCACWechatPayModel.m; sourceTree = "<group>"; };
+		E47165051ED88F2000B7C960 /* CCACProductVerifyTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCACProductVerifyTask.h; sourceTree = "<group>"; };
+		E47165061ED88F2000B7C960 /* CCACProductVerifyTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCACProductVerifyTask.m; sourceTree = "<group>"; };
+		E47165081ED88F8D00B7C960 /* CCACProductVerifyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCACProductVerifyModel.h; sourceTree = "<group>"; };
+		E47165091ED88F8D00B7C960 /* CCACProductVerifyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCACProductVerifyModel.m; sourceTree = "<group>"; };
 		E487E1EA1E88A5A100E3B4BD /* CCAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E487E20B1E88F86700E3B4BD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E487E20C1E88F86700E3B4BD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -266,6 +272,24 @@
 				E414EA341E9497E4007CC2B0 /* CCACWechatPayModel.m */,
 			);
 			path = pay;
+			sourceTree = "<group>";
+		};
+		E47165031ED88EFA00B7C960 /* Verify */ = {
+			isa = PBXGroup;
+			children = (
+				E47165081ED88F8D00B7C960 /* CCACProductVerifyModel.h */,
+				E47165091ED88F8D00B7C960 /* CCACProductVerifyModel.m */,
+			);
+			path = Verify;
+			sourceTree = "<group>";
+		};
+		E47165041ED88EFE00B7C960 /* Verify */ = {
+			isa = PBXGroup;
+			children = (
+				E47165051ED88F2000B7C960 /* CCACProductVerifyTask.h */,
+				E47165061ED88F2000B7C960 /* CCACProductVerifyTask.m */,
+			);
+			path = Verify;
 			sourceTree = "<group>";
 		};
 		E487E1E11E88A5A100E3B4BD = {
@@ -447,6 +471,7 @@
 		E487E2741E8B493600E3B4BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E47165031ED88EFA00B7C960 /* Verify */,
 				E414EA321E9497A2007CC2B0 /* pay */,
 				E4C888E71E8C962D0001F083 /* Banner */,
 				E487E27E1E8B513A00E3B4BD /* Member */,
@@ -458,6 +483,7 @@
 		E487E2751E8B493600E3B4BD /* NetWorkTask */ = {
 			isa = PBXGroup;
 			children = (
+				E47165041ED88EFE00B7C960 /* Verify */,
 				E4B24DD11EA46479004553C2 /* Common */,
 				E4C888EB1E8C96970001F083 /* Banner */,
 				E487E2771E8B498000E3B4BD /* SignIn */,
@@ -655,7 +681,7 @@
 					E487E1E91E88A5A100E3B4BD = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4HWEYH5Y8D;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -755,6 +781,7 @@
 				E414E9BB1E8D5ADD007CC2B0 /* CCACGo+Common.m in Sources */,
 				E414E9C31E8D6007007CC2B0 /* CCACGo+CCACMainVC.m in Sources */,
 				E487E22E1E89026A00E3B4BD /* DDObject+DDRequest.m in Sources */,
+				E47165071ED88F2000B7C960 /* CCACProductVerifyTask.m in Sources */,
 				E487E22F1E89026A00E3B4BD /* DDRequestModel.m in Sources */,
 				E4C815741E8CF98F00D6E227 /* TestViewController.m in Sources */,
 				E487E23F1E8A06D300E3B4BD /* CCACSignInVC.m in Sources */,
@@ -769,6 +796,7 @@
 				E487E23A1E89050000E3B4BD /* DDKitHelperObj.m in Sources */,
 				E414EA241E8EB4CC007CC2B0 /* SystemFunctions.m in Sources */,
 				E414E9B81E8D58DE007CC2B0 /* CCACGo.m in Sources */,
+				E471650A1ED88F8D00B7C960 /* CCACProductVerifyModel.m in Sources */,
 				E487E27A1E8B49A800E3B4BD /* CCACSignInModel.m in Sources */,
 				E4C888E31E8C10C70001F083 /* DDAvatarView.m in Sources */,
 				E4C888E01E8BFEC80001F083 /* DataConfigManager.m in Sources */,
@@ -926,8 +954,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 4HWEYH5Y8D;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Supporting files/CCAC-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CCAC/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -978,8 +1006,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shawkaine.argentinashop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "251b2ec7-9699-498c-99c5-cf8c39f0a501";
-				PROVISIONING_PROFILE_SPECIFIER = Online;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
@@ -989,9 +1017,9 @@
 			baseConfigurationReference = BED6CE2AE90057D570869E9A /* Pods-CCAC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				DEVELOPMENT_TEAM = 4HWEYH5Y8D;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhujiang Tech (shenzhen) Co Ltd. (4HWEYH5Y8D)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Supporting files/CCAC-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/CCAC/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1042,8 +1070,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shawkaine.argentinashop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "251b2ec7-9699-498c-99c5-cf8c39f0a501";
-				PROVISIONING_PROFILE_SPECIFIER = Online;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;

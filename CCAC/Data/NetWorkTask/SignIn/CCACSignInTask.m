@@ -13,6 +13,7 @@
 - (instancetype)init {
     if ((self = [super init])) {
         self.dd_requestPath = @"api/auth/login";
+        
     }
     return self;
 }

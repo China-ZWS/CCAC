@@ -8,6 +8,8 @@
 
 #import "CCACTestVC.h"
 
+#import "CCACProductVerifyTask.h"
+
 
 #define kBack_title_topLb_textFontSize     DDLayoutIphone6Pixels(20.f)
 #define kBack_title_bottomLb_textFontSize  DDLayoutIphone6Pixels(15.f)
@@ -115,7 +117,15 @@
 
 - (void)onclickWithSubmit {
     [CCACGo gotoScanWithCompletionWithQRCodeBlock:^(NSString *result) {
-        [CCACGo pushWapVCWithClassName:@"CCACCommonWapVC" parameter:@{@"linkUrl":result} hidesBottomBarWhenPushed:YES];;
+        NSURL *url = [NSURL URLWithString:result];
+        NSArray *datas = [url.query componentsSeparatedByString:@"="];
+        [CCACProductVerifyTask taskWithToken:kUserToken() menber_id:[NSString stringWithFormat:@"%zd",[AppServer server].menberModel.id] uuid:datas[1] block:^(CCACProductVerifyResponse *response) {
+            if (DDValidResponse(response)) {
+                [CCACGo pushWapVCWithClassName:@"CCACCommonWapVC" parameter:@{@"linkUrl":[NSString stringWithFormat:@"http://eshop.argentina.zjtech.cc/web/index.html#/testSuccess?uid=%@",datas[1]]} hidesBottomBarWhenPushed:YES];
+            } else {
+                [CCACGo pushWapVCWithClassName:@"CCACCommonWapVC" parameter:@{@"linkUrl":@"http://eshop.argentina.zjtech.cc/web/index.html#/testFail"} hidesBottomBarWhenPushed:YES];
+            }
+        }];
     } completionWithOtherCodeBlock:^(NSString *result) {
         
     }];

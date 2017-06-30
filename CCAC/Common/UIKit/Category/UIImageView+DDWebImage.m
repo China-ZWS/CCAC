@@ -22,7 +22,7 @@
         manager = [[YYWebImageManager alloc] initWithCache:cache queue:[YYWebImageManager sharedManager].queue];
         manager.sharedTransformBlock = ^(UIImage *image, NSURL *url) {
             CGFloat width = image.size.width < image.size.height ? image.size.width : image.size.height;
-            image = [image getSubImage:image mCGRect:CGRectMake(0, 0, width, width) centerBool:YES];
+            image = [image getSubImage:image mCGRect:CGRectMake(0, 0, width, width) centerBool:NO];
             return [image imageByRoundCornerRadius:image.size.height / 2];
         };
     });

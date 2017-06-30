@@ -213,6 +213,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.row >= _moreLocalList.count) {
+        return;
+    }
     NSDictionary *data = _moreLocalList[indexPath.row];
     _selected(indexPath.row,data[@"linkUrl"]);
 }
